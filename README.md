@@ -17,7 +17,7 @@ sudo apt install python-pip python-tk git gfortran libopenblas-dev liblapack-dev
 pip install numpy
 ```
 
-It may be necessary to recompile the code in /gpbo/cproj which is a custom Gaussian Process library allowing observation and inference of first of second derivatives for any kernels that have all the necessary higher order derivatives defined in kernels.ccp (so far only squared exponential and Matern 5/2). 
+It may be necessary  to recompile the code in /gpbo/cproj which is a custom Gaussian Process library allowing observation and inference of first of second derivatives for any kernels that have all the necessary higher order derivatives defined in kernels.ccp (so far only squared exponential and Matern 5/2). 
 Assuming g++ is available and all libraries are in the default path this can be done using the script /gpbo/cproj/build.sh . Otherwise the script /gpbo/cproj/buildgrey.sh will need to be modified to suit your system by explicitly providing paths to lapack, cblas and any other libraries that may not be found by defalt.
 
 Examples
